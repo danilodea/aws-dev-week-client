@@ -86,7 +86,7 @@ export const ChatClient = (props: Props) => {
                     style={{ marginRight: 7, color: "#232F3E", borderColor: "#232F3E" }} variant="outlined" size="small" disableElevation onClick={props.onPublicMessage}>Mensagem pública</Button>
                   }
                   
-                  {props.isConnected && <Button style={{ marginRight: 7, color: "#232F3E", borderColor: "#232F3E" }} variant="outlined" size="small" disableElevation onClick={props.onBotMessage}>Mensagem para o Bot</Button>}
+                  {props.isConnected && <Button style={{ marginRight: 7, color: "#232F3E", borderColor: "#232F3E" }} variant="outlined" size="small" disableElevation onClick={props.onBotMessage}>Mensagem para o Bot (GPT)</Button>}
                   {props.isConnected && <Button style={{ marginRight: 7, color: "#232F3E", borderColor: "#232F3E" }} variant="outlined" size="small" disableElevation onClick={props.onDisconnect}>Sair</Button>}
                   {!props.isConnected && <Button style={{ marginRight: 7, color: "#232F3E", borderColor: "#232F3E" }} variant="outlined" size="small" disableElevation onClick={props.onConnect}>Entrar</Button>}
                 </Grid>
